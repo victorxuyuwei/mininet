@@ -15,6 +15,8 @@ import os
 import sys
 import time
 
+print("IN DEV")
+
 from functools import partial
 from optparse import OptionParser  # pylint: disable=deprecated-module
 from sys import exit  # pylint: disable=redefined-builtin

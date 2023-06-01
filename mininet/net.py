@@ -951,6 +951,11 @@ class Mininet( object ):
         fixLimits()
         cls.inited = True
 
+    def exposeToMininetController(self):
+        # [net] - [service] ..... [controller]
+        import service 
+        self.mnservice = service.MininetService(self)
+        
 
 class MininetWithControlNet( Mininet ):
 
